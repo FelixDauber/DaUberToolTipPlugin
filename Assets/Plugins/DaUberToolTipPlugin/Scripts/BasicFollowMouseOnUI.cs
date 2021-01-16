@@ -26,7 +26,9 @@ namespace DaUberToolTipPlugin
         void UpdatePosition()
         {
             transform.position = Input.mousePosition + (new Vector3(rectTransform.sizeDelta.x * offsetToMouse.x, rectTransform.sizeDelta.y * offsetToMouse.y, 0));
-            AlignWindow();
+            
+            if(!allowLeavingUI)
+                AlignWindow();
         }
         public void AlignWindow()
         {

@@ -11,14 +11,34 @@ namespace DaUberToolTipPlugin
 
         public virtual string Description { get => description; }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        void AssignToolTip()
         {
             ToolTipManager.main.SetToolTip(this);
         }
-        public void OnPointerExit(PointerEventData eventData)
+        void UnAssignToolTip()
         {
             ToolTipManager.main.RemoveToolTip(this);
         }
+
+        #region Enter/Exit methods
+        private void OnMouseEnter()
+        {
+            AssignToolTip();
+        }
+        private void OnMouseExit()
+        {
+            UnAssignToolTip();
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            AssignToolTip();
+        }
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            UnAssignToolTip();
+        }
+        #endregion
     }
 
 #if UNITY_EDITOR

@@ -31,7 +31,7 @@ namespace DaUberToolTipPlugin
             if(currentToolTip == toolTip)
             {
                 currentToolTip = null;
-                toolTipObject.Active = false;
+                SetToolTipActive(false);
             }
         }
         public void SetToolTipActive(bool isActive)
