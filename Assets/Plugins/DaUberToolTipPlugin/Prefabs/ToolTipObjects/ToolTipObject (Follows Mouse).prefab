@@ -182,5 +182,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40939e56ed6f1314f96da662799feb17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetToMouse: {x: 0.6, y: -0.6}
+  offsetToMouse: {x: 0.5, y: -0.5}
   allowLeavingUI: 0
