@@ -7,9 +7,9 @@ Quickly set it up in 3 simple steps.
 
 1. Add the tooltip manager prefab to any canvas (Make sure to put it far down in the heirarchy so it isn't behind anything)
 
-2. Prepare your coffee.
+2. Add a toolTip script to any gameObject and give it a description
 
-3. Have some nice coffee.
+3. Have some coffee.
 
 
 Extras:
